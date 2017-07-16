@@ -22,7 +22,7 @@ In these files, each line has three columns:
 zoneID, money, freq
 which indicate the identifier of each geo-unit, the total amount of contribution in dollars, and the number of individual contributions.
 
-Original data: The bulk FEC data can be downloaded from http://data.influenceexplorer.com/bulk/
+Original data: The bulk FEC data can be downloaded from [influenceexplorer](http://data.influenceexplorer.com/bulk/).
 
 2) Census -- income and population density: regrdata_geopoli/census_<geo-unit>.csv 
 
@@ -32,20 +32,20 @@ In these files, each line has 14 columns:
 zcode, cntyfips, cntyname, state, statename, area, lat, lon, zpop, zinc, cpop, cinc, spop, sinc
 which indicate zip code (NA for higher unit), county fips code, county name (empty for higher unit), state abbreviation, area in square miles, latitude, longitude, population in the zip code area (empty for higher unit), income of the zip code area (empty for higher unit), population in the county (empty for higher unit), income of the county (empty for higher unit), population in the state, income of the state
 
-Original data: The census data can be downloaded from Missouri Census Data Center (MCDC) http://mcdc.missouri.edu/cgi-bin/uexplore?/pub/data/sf32000
+Original data: The census data can be downloaded from [Missouri Census Data Center (MCDC)](http://mcdc.missouri.edu/cgi-bin/uexplore?/pub/data/sf32000)
     the data for county+state is generated from Dexter, by selecting 2 datasets:
-    (select dataset: http://mcdc.missouri.edu/cgi-bin/uexplore?/pub/data/sf32000)
-     /pub/data/sf32000/usstcntygeos - 
-       http://mcdc2.missouri.edu/cgi-bin/broker?_PROGRAM=websas.uex2dex.sas&_SERVICE=appdev&path=/pub/data/sf32000&dset=usstcntygeos&view=0
-     /pub/data/sf32000/usstcnty - 
-       http://mcdc2.missouri.edu/cgi-bin/broker?_PROGRAM=websas.uex2dex.sas&_SERVICE=appdev&path=/pub/data/sf32000&dset=usstcnty&view=0
+    select dataset: [sf32000](http://mcdc.missouri.edu/cgi-bin/uexplore?/pub/data/sf32000)
+     [/pub/data/sf32000/usstcntygeos](http://mcdc2.missouri.edu/cgi-bin/broker?_PROGRAM=websas.uex2dex.sas&_SERVICE=appdev&path=/pub/data/sf32000&dset=usstcntygeos&view=0) 
+            
+     [/pub/data/sf32000/usstcnty](http://mcdc2.missouri.edu/cgi-bin/broker?_PROGRAM=websas.uex2dex.sas&_SERVICE=appdev&path=/pub/data/sf32000&dset=usstcnty&view=0) 
+       
 
     the data for zcode is generated from Dexter, by selecting 2 datasets:
-    (select dataset: http://mcdc.missouri.edu/cgi-bin/uexplore?/pub/data/sf32000)
-     /pub/data/sf32000/uszipsgeos - Contains just the geographic ID fields as read from the Census Bureau usgeo3_uf3 file. We kept only the complete 3-digit and 5-digit ZCTA levels on this dataset.
-       http://mcdc2.missouri.edu/cgi-bin/broker?_PROGRAM=websas.uex2dex.sas&_SERVICE=appdev&path=/pub/data/sf32000&dset=uszipsgeos&view=0
-     /pub/data/sf32000/uszipsph - U.S. ZCTA (ZIP) and 3-digit ZCTA level summaries: P and H tables
-       http://mcdc2.missouri.edu/cgi-bin/broker?_PROGRAM=websas.uex2dex.sas&_SERVICE=appdev&path=/pub/data/sf32000&dset=uszipsph&view=0
+    select dataset: [sf32000](http://mcdc.missouri.edu/cgi-bin/uexplore?/pub/data/sf32000)
+     [/pub/data/sf32000/uszipsgeos](http://mcdc2.missouri.edu/cgi-bin/broker?_PROGRAM=websas.uex2dex.sas&_SERVICE=appdev&path=/pub/data/sf32000&dset=uszipsgeos&view=0) - Contains just the geographic ID fields as read from the Census Bureau usgeo3_uf3 file. We kept only the complete 3-digit and 5-digit ZCTA levels on this dataset.
+       
+     [/pub/data/sf32000/uszipsph](http://mcdc2.missouri.edu/cgi-bin/broker?_PROGRAM=websas.uex2dex.sas&_SERVICE=appdev&path=/pub/data/sf32000&dset=uszipsph&view=0) - U.S. ZCTA (ZIP) and 3-digit ZCTA level summaries: P and H tables
+       
 
 3) US presidential vote share: regrdata_geopoli/voteshare_<geo-unit>_<yStart>_<yEnd>.csv
 
@@ -53,7 +53,7 @@ In these files, each line contains three columns:
 zoneID, repVoteshare, totalVotes
 which indicate the identifier of each geo-unit, the Republican vote share, total number of votes.
 
-Original data: downloaded at http://library.cqpress.com.ezp-prod1.hul.harvard.edu/elections/export.php (requires Harvard ID)
+Original data: downloaded at [cqpress](http://library.cqpress.com.ezp-prod1.hul.harvard.edu/elections/export.php)
 
 4) Earning: regrdata_geopoli/earning_<geo-unit>.csv
 
@@ -61,12 +61,10 @@ In these files, each line contains 23 columns:
 zoneID,totalPop,earningPop,earningPop1,earningPop2,earningPop3,earningPop4,earningPop5,earningPop6,earningPop7,earningPop8,earningPop9,earningPop10,earningPop11,earningPop12,earningPop13,earningPop14,earningPop15,earningPop16,earningPop17,earningPop18,earningPop19,earningPop20
 which indicate the identifier of each geo-unit, the total population of the geo-unit, the earning population, and 20 breaks of the earning population. The last break is the population earning 100K or more.
 
-Original data: the data for earnings and household income are described in:
-    http://www.socialexplorer.com/pub/reportdata/metabrowser.aspx?survey=C2000&ds=Summary+File+3&table=P084&header=True
+Original data: the data for earnings and household income are described in [socialexplorer](http://www.socialexplorer.com/pub/reportdata/metabrowser.aspx?survey=C2000&ds=Summary+File+3&table=P084&header=True)    
     P84.	Sex By Earnings In 1999 Dollars For The Population 16+ Years With Earnings
-    Universe: Population 16 years and over with earnings
-    http://www.socialexplorer.com/pub/reportdata/metabrowser.aspx?survey=C2000&ds=Summary+File+3&table=P052&header=True
-    P52.	Household Income In 1999 Dollars
+    Universe: Population 16 years and over with earnings    
+    [P52.](http://www.socialexplorer.com/pub/reportdata/metabrowser.aspx?survey=C2000&ds=Summary+File+3&table=P052&header=True)	Household Income In 1999 Dollars
     Universe: Households
 
 5) Commuting flow: US_census_commuting_network

@@ -56,8 +56,8 @@ In these files, each line contains 23 columns:
 zoneID,totalPop,earningPop,earningPop1,earningPop2,earningPop3,earningPop4,earningPop5,earningPop6,earningPop7,earningPop8,earningPop9,earningPop10,earningPop11,earningPop12,earningPop13,earningPop14,earningPop15,earningPop16,earningPop17,earningPop18,earningPop19,earningPop20
 which indicate the identifier of each geo-unit, the total population of the geo-unit, the earning population, and 20 breaks of the earning population. The last break is the population earning 100K or more.
 
-Original data: the data for earnings and household income are described in [socialexplorer](http://www.socialexplorer.com/pub/reportdata/metabrowser.aspx?survey=C2000&ds=Summary+File+3&table=P084&header=True)    
-- P84. Sex By Earnings In 1999 Dollars For The Population 16+ Years With Earnings
+Original data: the data for earnings and household income are described in [socialexplorer](http://www.socialexplorer.com/)    
+- [P84.](http://www.socialexplorer.com/pub/reportdata/metabrowser.aspx?survey=C2000&ds=Summary+File+3&table=P084&header=True) Sex By Earnings In 1999 Dollars For The Population 16+ Years With Earnings
 	- Universe: Population 16 years and over with earnings    
 - [P52.](http://www.socialexplorer.com/pub/reportdata/metabrowser.aspx?survey=C2000&ds=Summary+File+3&table=P052&header=True)	Household Income In 1999 Dollars
 	- Universe: Households

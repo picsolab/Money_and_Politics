@@ -33,15 +33,14 @@ zcode, cntyfips, cntyname, state, statename, area, lat, lon, zpop, zinc, cpop, c
 which indicate zip code (NA for higher unit), county fips code, county name (empty for higher unit), state abbreviation, area in square miles, latitude, longitude, population in the zip code area (empty for higher unit), income of the zip code area (empty for higher unit), population in the county (empty for higher unit), income of the county (empty for higher unit), population in the state, income of the state
 
 Original data: The census data can be downloaded from [Missouri Census Data Center (MCDC)](http://mcdc.missouri.edu/cgi-bin/uexplore?/pub/data/sf32000)
-    the data for county+state is generated from Dexter, by selecting 2 datasets:
-    select dataset: [sf32000](http://mcdc.missouri.edu/cgi-bin/uexplore?/pub/data/sf32000)
-    * [/pub/data/sf32000/usstcntygeos](http://mcdc2.missouri.edu/cgi-bin/broker?_PROGRAM=websas.uex2dex.sas&_SERVICE=appdev&path=/pub/data/sf32000&dset=usstcntygeos&view=0)             
-    * [/pub/data/sf32000/usstcnty](http://mcdc2.missouri.edu/cgi-bin/broker?_PROGRAM=websas.uex2dex.sas&_SERVICE=appdev&path=/pub/data/sf32000&dset=usstcnty&view=0)        	
-    the data for zcode is generated from Dexter, by selecting 2 datasets:
-    select dataset: [sf32000](http://mcdc.missouri.edu/cgi-bin/uexplore?/pub/data/sf32000)
-    * [/pub/data/sf32000/uszipsgeos](http://mcdc2.missouri.edu/cgi-bin/broker?_PROGRAM=websas.uex2dex.sas&_SERVICE=appdev&path=/pub/data/sf32000&dset=uszipsgeos&view=0) - Contains just the geographic ID fields as read from the Census Bureau usgeo3_uf3 file. We kept only the complete 3-digit and 5-digit ZCTA levels on this dataset.
-    * [/pub/data/sf32000/uszipsph](http://mcdc2.missouri.edu/cgi-bin/broker?_PROGRAM=websas.uex2dex.sas&_SERVICE=appdev&path=/pub/data/sf32000&dset=uszipsph&view=0) - U.S. ZCTA (ZIP) and 3-digit ZCTA level summaries: P and H tables
-       
+the data for county+state is generated from Dexter, by selecting 2 datasets:
+- select dataset: [sf32000](http://mcdc.missouri.edu/cgi-bin/uexplore?/pub/data/sf32000)
+	- [/pub/data/sf32000/usstcntygeos](http://mcdc2.missouri.edu/cgi-bin/broker?_PROGRAM=websas.uex2dex.sas&_SERVICE=appdev&path=/pub/data/sf32000&dset=usstcntygeos&view=0)             
+	- [/pub/data/sf32000/usstcnty](http://mcdc2.missouri.edu/cgi-bin/broker?_PROGRAM=websas.uex2dex.sas&_SERVICE=appdev&path=/pub/data/sf32000&dset=usstcnty&view=0)        	
+the data for zcode is generated from Dexter, by selecting 2 datasets:
+- select dataset: [sf32000](http://mcdc.missouri.edu/cgi-bin/uexplore?/pub/data/sf32000)
+	- [/pub/data/sf32000/uszipsgeos](http://mcdc2.missouri.edu/cgi-bin/broker?_PROGRAM=websas.uex2dex.sas&_SERVICE=appdev&path=/pub/data/sf32000&dset=uszipsgeos&view=0) - Contains just the geographic ID fields as read from the Census Bureau usgeo3_uf3 file. We kept only the complete 3-digit and 5-digit ZCTA levels on this dataset.
+	- [/pub/data/sf32000/uszipsph](http://mcdc2.missouri.edu/cgi-bin/broker?_PROGRAM=websas.uex2dex.sas&_SERVICE=appdev&path=/pub/data/sf32000&dset=uszipsph&view=0) - U.S. ZCTA (ZIP) and 3-digit ZCTA level summaries: P and H tables       
 
 3) US presidential vote share: regrdata_geopoli/voteshare_<geo-unit>_<yStart>_<yEnd>.csv
 

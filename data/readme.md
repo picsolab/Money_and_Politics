@@ -35,16 +35,12 @@ which indicate zip code (NA for higher unit), county fips code, county name (emp
 Original data: The census data can be downloaded from [Missouri Census Data Center (MCDC)](http://mcdc.missouri.edu/cgi-bin/uexplore?/pub/data/sf32000)
     the data for county+state is generated from Dexter, by selecting 2 datasets:
     select dataset: [sf32000](http://mcdc.missouri.edu/cgi-bin/uexplore?/pub/data/sf32000)
-     [/pub/data/sf32000/usstcntygeos](http://mcdc2.missouri.edu/cgi-bin/broker?_PROGRAM=websas.uex2dex.sas&_SERVICE=appdev&path=/pub/data/sf32000&dset=usstcntygeos&view=0) 
-            
-     [/pub/data/sf32000/usstcnty](http://mcdc2.missouri.edu/cgi-bin/broker?_PROGRAM=websas.uex2dex.sas&_SERVICE=appdev&path=/pub/data/sf32000&dset=usstcnty&view=0) 
-       
-
+    * [/pub/data/sf32000/usstcntygeos](http://mcdc2.missouri.edu/cgi-bin/broker?_PROGRAM=websas.uex2dex.sas&_SERVICE=appdev&path=/pub/data/sf32000&dset=usstcntygeos&view=0)             
+    * [/pub/data/sf32000/usstcnty](http://mcdc2.missouri.edu/cgi-bin/broker?_PROGRAM=websas.uex2dex.sas&_SERVICE=appdev&path=/pub/data/sf32000&dset=usstcnty&view=0)        	
     the data for zcode is generated from Dexter, by selecting 2 datasets:
     select dataset: [sf32000](http://mcdc.missouri.edu/cgi-bin/uexplore?/pub/data/sf32000)
-     [/pub/data/sf32000/uszipsgeos](http://mcdc2.missouri.edu/cgi-bin/broker?_PROGRAM=websas.uex2dex.sas&_SERVICE=appdev&path=/pub/data/sf32000&dset=uszipsgeos&view=0) - Contains just the geographic ID fields as read from the Census Bureau usgeo3_uf3 file. We kept only the complete 3-digit and 5-digit ZCTA levels on this dataset.
-       
-     [/pub/data/sf32000/uszipsph](http://mcdc2.missouri.edu/cgi-bin/broker?_PROGRAM=websas.uex2dex.sas&_SERVICE=appdev&path=/pub/data/sf32000&dset=uszipsph&view=0) - U.S. ZCTA (ZIP) and 3-digit ZCTA level summaries: P and H tables
+    * [/pub/data/sf32000/uszipsgeos](http://mcdc2.missouri.edu/cgi-bin/broker?_PROGRAM=websas.uex2dex.sas&_SERVICE=appdev&path=/pub/data/sf32000&dset=uszipsgeos&view=0) - Contains just the geographic ID fields as read from the Census Bureau usgeo3_uf3 file. We kept only the complete 3-digit and 5-digit ZCTA levels on this dataset.
+    * [/pub/data/sf32000/uszipsph](http://mcdc2.missouri.edu/cgi-bin/broker?_PROGRAM=websas.uex2dex.sas&_SERVICE=appdev&path=/pub/data/sf32000&dset=uszipsph&view=0) - U.S. ZCTA (ZIP) and 3-digit ZCTA level summaries: P and H tables
        
 
 3) US presidential vote share: regrdata_geopoli/voteshare_<geo-unit>_<yStart>_<yEnd>.csv
@@ -62,10 +58,10 @@ zoneID,totalPop,earningPop,earningPop1,earningPop2,earningPop3,earningPop4,earni
 which indicate the identifier of each geo-unit, the total population of the geo-unit, the earning population, and 20 breaks of the earning population. The last break is the population earning 100K or more.
 
 Original data: the data for earnings and household income are described in [socialexplorer](http://www.socialexplorer.com/pub/reportdata/metabrowser.aspx?survey=C2000&ds=Summary+File+3&table=P084&header=True)    
-    P84.	Sex By Earnings In 1999 Dollars For The Population 16+ Years With Earnings
-    Universe: Population 16 years and over with earnings    
-    [P52.](http://www.socialexplorer.com/pub/reportdata/metabrowser.aspx?survey=C2000&ds=Summary+File+3&table=P052&header=True)	Household Income In 1999 Dollars
-    Universe: Households
+    * P84. Sex By Earnings In 1999 Dollars For The Population 16+ Years With Earnings
+    * Universe: Population 16 years and over with earnings    
+    * [P52.](http://www.socialexplorer.com/pub/reportdata/metabrowser.aspx?survey=C2000&ds=Summary+File+3&table=P052&header=True)	Household Income In 1999 Dollars
+    * Universe: Households
 
 5) Commuting flow: US_census_commuting_network
 See readme.txt under the folder for file format description.
@@ -73,5 +69,4 @@ The file US_Census_County_Commuting_Network.csv contains county-to-county commut
 
 
 ------------------------------------------------
-Yu-Ru Lin <yuruliny@gmail.com>, May 2013
-Please email me if you find any problems or have questions.
+Yu-Ru Lin, May 2013

@@ -13,6 +13,6 @@ The MATLAB code can be used to reproduce the results w.r.t. all models specified
 The code utilizes the Econometrics Toolbox. It can be downloaded at: http://www.spatial-econometrics.com/
 
 ## Publication
-If you make use of these data sets, please cite: 
+If you make use of these data sets and code, please cite: 
 
 Lin, Y.-R., Lazer, D., Kennedy, R. (2015). "The Geography of Money and Politics: Population Density, Social Networks and Political Contributions," SSRN-id2632149

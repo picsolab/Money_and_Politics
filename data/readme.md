@@ -48,7 +48,7 @@ In these files, each line contains three columns:
 zoneID, repVoteshare, totalVotes
 which indicate the identifier of each geo-unit, the Republican vote share, total number of votes.
 
-Original data: downloaded at [cqpress](http://library.cqpress.com.ezp-prod1.hul.harvard.edu/elections/export.php)
+Original data: downloaded at [cqpress](http://guides.library.harvard.edu/hks/federal)<!--(http://library.cqpress.com.ezp-prod1.hul.harvard.edu/elections/export.php)-->
 
 4) Earning: `regrdata_geopoli/earning_<geo-unit>.csv`
 

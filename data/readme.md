@@ -10,7 +10,7 @@ The naming of the data files is based on following parameters:
 * yStart, yEnd: The start and end years of the data.
 
 
-1) FEC -- political contribution: regrdata_geopoli/aggyear\_<geo-unit>\_<yStart>\_<yEnd>\_*.csv
+1) FEC -- political contribution: `regrdata_geopoli/aggyear_<geo-unit>_<yStart>_<yEnd>_*.csv`
 
 The individual contributions are aggregated by geo-units (state, county, and zcode) and by election cycles (2000, 2002, 2004, 2006, 2008, and 2010). 
 For examples:
@@ -24,7 +24,7 @@ which indicate the identifier of each geo-unit, the total amount of contribution
 
 Original data: The bulk FEC data can be downloaded from [influenceexplorer](http://data.influenceexplorer.com/bulk/).
 
-2) Census -- income and population density: regrdata_geopoli/census\_<geo-unit>.csv 
+2) Census -- income and population density: `regrdata_geopoli/census_<geo-unit>.csv` 
 
 There are three files: census_state.csv, census_county.csv and census_zcode.csv
 
@@ -42,7 +42,7 @@ select dataset: [sf32000](http://mcdc.missouri.edu/cgi-bin/uexplore?/pub/data/sf
 	- [/pub/data/sf32000/uszipsgeos](http://mcdc2.missouri.edu/cgi-bin/broker?_PROGRAM=websas.uex2dex.sas&_SERVICE=appdev&path=/pub/data/sf32000&dset=uszipsgeos&view=0) - Contains just the geographic ID fields as read from the Census Bureau usgeo3_uf3 file. We kept only the complete 3-digit and 5-digit ZCTA levels on this dataset.
 	- [/pub/data/sf32000/uszipsph](http://mcdc2.missouri.edu/cgi-bin/broker?_PROGRAM=websas.uex2dex.sas&_SERVICE=appdev&path=/pub/data/sf32000&dset=uszipsph&view=0) - U.S. ZCTA (ZIP) and 3-digit ZCTA level summaries: P and H tables       
 
-3) US presidential vote share: regrdata_geopoli/voteshare\_<geo-unit>\_<yStart>\_<yEnd>.csv
+3) US presidential vote share: `regrdata_geopoli/voteshare_<geo-unit>_<yStart>_<yEnd>.csv`
 
 In these files, each line contains three columns:
 zoneID, repVoteshare, totalVotes
@@ -50,7 +50,7 @@ which indicate the identifier of each geo-unit, the Republican vote share, total
 
 Original data: downloaded at [cqpress](http://library.cqpress.com.ezp-prod1.hul.harvard.edu/elections/export.php)
 
-4) Earning: regrdata_geopoli/earning\_<geo-unit>.csv
+4) Earning: `regrdata_geopoli/earning_<geo-unit>.csv`
 
 In these files, each line contains 23 columns:
 zoneID,totalPop,earningPop,earningPop1,earningPop2,earningPop3,earningPop4,earningPop5,earningPop6,earningPop7,earningPop8,earningPop9,earningPop10,earningPop11,earningPop12,earningPop13,earningPop14,earningPop15,earningPop16,earningPop17,earningPop18,earningPop19,earningPop20
@@ -62,7 +62,7 @@ Original data: the data for earnings and household income are described in [soci
 - [P52.](http://www.socialexplorer.com/pub/reportdata/metabrowser.aspx?survey=C2000&ds=Summary+File+3&table=P052&header=True)	Household Income In 1999 Dollars
 	- Universe: Households
 
-5) Commuting flow: US_census_commuting_network
+5) Commuting flow: `US_census_commuting_network`
 See readme.txt under the folder for file format description.
 The file US_Census_County_Commuting_Network.csv contains county-to-county commuting population. The incoming and outgoing flow can be generated from this file. 
 

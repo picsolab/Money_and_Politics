@@ -63,6 +63,7 @@ Original data: the data for earnings and household income are described in [soci
 	- Universe: Households
 
 5) Commuting flow: `US_census_commuting_network`
+
 See readme.txt under the folder for file format description.
 The file US_Census_County_Commuting_Network.csv contains county-to-county commuting population. The incoming and outgoing flow can be generated from this file. 
 

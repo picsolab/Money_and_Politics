@@ -15,4 +15,4 @@ The code utilizes the Econometrics Toolbox. It can be downloaded at: http://www.
 ## Publication
 If you make use of these data sets and code, please cite: 
 
-\Lin, Y.-R., Kennedy, R., Lazer, D. (forthcoming). The Geography of Money and Politics in the U.S.: Population Density, Social Networking and Political Contributions. Research & Politics
+Lin, Y.-R., Kennedy, R., Lazer, D. (forthcoming). The Geography of Money and Politics in the U.S.: Population Density, Social Networking and Political Contributions. Research & Politics
